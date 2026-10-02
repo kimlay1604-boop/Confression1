@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>A Little Message For You ❤️</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            text-align: center;
+            color: #fff;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 40px;
+            border-radius: 25px;
+            width: 80%;
+            max-width: 500px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        h1 {
+            font-size: 40px;
+        }
+        p {
+            font-size: 20px;
+            line-height: 1.6;
+        }
+        button {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 30px;
+            font-size: 18px;
+            cursor: pointer;
+            background: white;
+            color: #ff5f7e;
+        }
+        button:hover {
+            transform: scale(1.05);
+        }
+        #message {
+            display: none;
+            margin-top: 20px;
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Hey You ❤️</h1>
+        <p>
+            I've been wanting to tell you something...
+        </p>
+        <p>
+            You're really special to me, and I think
+            I've started to like you more than just a friend. 🥹❤️
+        </p>
+        <button onclick="showMessage()">Click Me 💕</button>
+        <div id="message">
+            I like you. ❤️<br><br>
+            Will you give me a chance?
+        </div>
+    </div>
+    <script>
+        function showMessage() {
+            document.getElementById("message").style.display = "block";
+        }
+    </script>
+</body>
+</html>
